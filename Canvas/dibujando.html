@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dibujando con Canvas</title>
+  <style type="text/css">
+    body {
+      background-color: #424182;
+      color: white;
+      font-family: Helvetica;
+    }
+
+    strong {
+      background-color: pink
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Dibujo en Canvas</h1>
+    <p>
+      ¿Cuantas linéas quieres?
+      <br />
+      <br />
+      <input type="text" id="texto_lineas" />
+      <input type="button" value="¡Calcular!" id="btn_calcular" />
+    </p>
+    <canvas width="300" height="300" id="area_dibujo"></canvas>
+    <p>
+      Asi queda tu dibujo
+    </p>
+  </div>
+  <script src="dibujo.js"></script>
+</body>
+
+</html>

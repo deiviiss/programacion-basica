@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>Peso Planetas</title>
+      <style type="text/css">
+      body
+      {
+        background-color: #424182;
+        color: white;
+        font-family: Helvetica;
+      }
+        </style>
+  </head>
+  <body>
+    <h2>Calcula tu peso</h2>
+    <p>En la Tierra pesas distinto que en Marte o en Jupiter</p>
+    <script type=text/javascript>
+    var usuario = prompt("Cual es tu peso?");
+    var planeta = prompt("Elige tu planeta\nMarte es 1\nJupiter es 2")
+    var peso = parseInt(usuario);
+    var planeta = parseInt(planeta)
+    var g_tierra = 9.8;
+    var g_marte = 3.7;
+    var g_jupiter = 24.8;
+    var peso_final;
+    var nombre;
+    if (planeta == 1)
+    {
+      peso_final = peso * g_marte / g_tierra;
+      nombre = "Marte";
+      console.log(peso_final);
+    }
+    else if (planeta == 2)
+    {
+      peso_final = peso * g_jupiter / g_tierra;
+      nombre = "Jupiter";
+    }
+    else
+    {
+      peso_final = 10000000;
+      nombre = "Krypton";
+    }
+    peso_final = parseInt (peso_final);
+    document.write ("Tu peso en " + nombre + " es " + peso_final + " KG ");
+  </script>
+  </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dibujar con Mouse</title>
+  <style type="text/css">
+    body {
+      background-color: #424182;
+      color: white;
+      font-family: Helvetica;
+    }
+
+    body {
+      background-color: #424182;
+      color: white;
+      font-family: Helvetica;
+    }
+
+    strong {
+      background-color: pink
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input {
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Dibujando con Mouse</h3>
+    <canvas width="350" height="350" id="dibujito"></canvas>
+    <p>Mueve el mouse para dibujar.</p>
+    <p>Elige el color</p>
+    <div class="container-buttons">
+      <input type="button" value="Blanco" id="botoncito_blanco" />
+      <input type="button" value="Verde" id="botoncito_verde" />
+      <input type="button" value="Naranja" id="botoncito_naranja" />
+    </div>
+  </div>
+  <script type="text/jscript" src="dibujar_mouse.js"></script>
+</body>
+
+</html>
